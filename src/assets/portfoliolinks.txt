@@ -1,0 +1,105 @@
+Portfolio.Page.jsx backup
+import React from "react";
+import project1Img from "../assets/images/project1.jpg";
+
+const projects = [
+  {
+    title: "Project 1",
+    description: "Create a simple personal webpage",
+    link: "https://helengoss.github.io/jan-26-demo/",
+    image: project1Img,
+  },
+  {
+    title: "Project 2",
+    description: "Build a Multi-page Responsive Website",
+    link: "https://helengoss.github.io/project2/",
+    image: "/images/project2.png",
+  },
+  {
+    title: "Project 3",
+    description: "Migrating a Site to Bootstrap",
+    link: "https://helengoss.github.io/project3",
+    image: "/images/project3.png",
+  },
+  {
+    title: "Project 4",
+    description:
+      "The Interactive TODO List. Introduction to JavaScript",
+    live: "https://helengoss.github.io/project4/",
+    repo: "https://github.com/helengoss/project4",
+    image: "/images/project4.png",
+  },
+  {
+    title: "Project 5",
+    description:
+      "Group project. Week 5: Introduction to REST APIs and Group Mini",
+    live: "https://gareths-debug.github.io/Institute-of-devs/#",
+    repo: "https://github.com/garethS-debug/Institute-of-devs.git",
+    image: "/images/project5.png",
+  },
+  {
+    title: "Project 6",
+    description:
+      "GitHub README.md Generator. Python Programming",
+    live: "https://www.youtube.com/watch?v=8bRrnkSmrMk",
+    repo: "https://github.com/helengoss/readmefilegenerator",
+    image: "/images/project6.png",
+  },
+  {
+    title: "Project 7",
+    description:
+      "Full Stack Notes Application using Node and Express. Advanced JavaScript, NodeJS and Express",
+    live: "https://note-taker-b2hg.onrender.com/",
+    repo: "https://github.com/helengoss/note_taker.git",
+    image: "/images/project7.png",
+  },
+  {
+    title: "Project 8",
+    description:
+      "Tech Blog Application. Week 8: SQL, ORM with Sequelize and Authentication",
+    live: null,
+    repo: null,
+    image: "/images/project8.png",
+  },
+];
+
+const PortfolioPage = () => {
+  return (
+    <div className="p-6">
+      <h2 className="text-3xl font-bold mb-6">Portfolio Page</h2>
+
+      {projects.map((project, index) => (
+        <div key={index} className="mb-8">
+          <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
+
+          {/* ✅ Use inline style for exact size */}
+          <img
+            src={project.image}
+            alt={project.title}
+            style={
+              index === 0
+                ? { width: "433px", height: "519px", objectFit: "cover" }
+                : { width: "100%", maxWidth: "400px", objectFit: "cover" }
+            }
+          />
+
+          <p className="mt-2">{project.description}</p>
+
+          {project.link && (
+            <a
+              href={project.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-500 underline"
+            >
+              View Project
+            </a>
+          )}
+        </div>
+      ))}
+    </div>
+  );
+};
+
+export default PortfolioPage;
+

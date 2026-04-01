@@ -1,0 +1,35 @@
+# Node modules (BIG one — likely your 6000 files)
+node_modules/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS files (macOS especially)
+.DS_Store
+
+# Environment variables (secrets)
+.env
+.env.*
+
+# Build / output folders
+dist/
+build/
+out/
+
+# VS Code settings (optional)
+.vscode/
+
+# Cache
+.cache/
+.tmp/
+
+# Dependency directories
+jspm_packages/
+
+# Optional: lock files (keep if required)
+# package-lock.json
+# yarn.lock
