@@ -70,8 +70,8 @@ const projects = [
   {
     title: "Project 9 – REACT Portfolio",
     description: "Using REACT, with a carousel and a form",
-    live: "https://full-stack-tech-blog-application-6g76.onrender.com/",
-    github: "https://github.com/helengoss/Full-Stack-Tech-Blog-Application",
+    live: "https://react-portfolio-sp8b.onrender.com",
+    github: "https://github.com/helengoss/reactportfolio",
     image: photo9,
   },
 ];
