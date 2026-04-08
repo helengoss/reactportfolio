@@ -3,7 +3,9 @@
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  width: 100%;
+  width: 75%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 /* Main area: sidebar + content */
@@ -15,8 +17,9 @@
 /* Sidebar styles */
 .layout-sidebar {
   width: 200px;
-  background-color: #f0f0f0;
+  background-color: #c7198dff;
   padding: 1rem;
+  color: white;
 }
 
 .layout-sidebar ul {
@@ -32,7 +35,7 @@
 }
 
 .layout-sidebar li.selected {
-  background-color: #ccc;
+  background-color: #ef7809ff;
   font-weight: bold;
 }
 
@@ -46,7 +49,7 @@
 
 /* Optional: footer styles */
 .layout-footer {
-  background-color: #333;
+  background-color: #ef7809ff;
   color: #fff;
   text-align: center;
   padding: 0.75rem 1rem;

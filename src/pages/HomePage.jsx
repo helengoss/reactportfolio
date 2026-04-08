@@ -1,9 +1,17 @@
 import React from "react";
 
 const HomePage = () => (
-  <div>
-    <h2>Welcome to Helen's Portfolio</h2>
-    <p>This is the Home Page content.</p>
+  <div style={{ padding: "1.5rem" }}>
+    <h2>About Helen</h2>
+    <p>
+      I'm a developer currently completing a full-stack bootcamp. This portfolio
+      showcases the projects I've built across the course — from HTML &amp; CSS to
+      Node.js, SQL, and React.
+    </p>
+    <p>
+      I enjoy building clean, functional web applications and I'm always looking
+      to improve my skills and take on new challenges.
+    </p>
   </div>
 );
 

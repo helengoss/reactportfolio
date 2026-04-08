@@ -1,0 +1,105 @@
+.portfolio {
+  padding: 1.5rem;
+}
+
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.gallery-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #ef7809ff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s, box-shadow 0.2s;
+  text-align: center;
+  color: #fff;
+}
+
+.gallery-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+/*the gallery-card img is the photo, so Ive set the px's to the exact size and kept the images a uniform size when cropping in photoshop */
+.gallery-card img {
+  width: 100%;
+  height: 408px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.gallery-card-body {
+  padding: 1rem;
+}
+
+.gallery-card-body h3 {
+  font-size: 1rem;
+  margin-bottom: 0.4rem;
+  color: white;
+}
+
+.gallery-card-body p {
+  font-size: 0.875rem;
+  color: white;
+  margin: 0 0 0.75rem;
+  line-height: 1.5;
+}
+
+.gallery-links {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.gallery-links a {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #c7198dff;
+  text-decoration: none;
+}
+
+.gallery-links a:hover {
+  text-decoration: underline;
+}
+/*the carousel needs to be adjust for the width of the image plus the 40px each of the arrow on the buttons and the 2x1rem (16px) for the gaps */
+.carousel {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  max-width: 660px;
+  margin: 0 auto;
+}
+
+.carousel .gallery-card {
+  flex: 1;
+}
+
+.carousel-btn {
+  background: #ef7809ff;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.carousel-btn:hover {
+  background: #c7198dff;
+}
+
+.carousel-counter {
+  text-align: center;
+  margin-top: 0.75rem;
+  color: #ef7809ff;
+  font-size: 0.9rem;
+}
+

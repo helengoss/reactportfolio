@@ -1,7 +1,7 @@
 const NavBar = () => {
   return (
     <nav style={styles.navbar}>
-        <h1>Portfolio | Helen Goss</h1>
+        <h1>Full Stack Portfolio | Helen Goss</h1>
       </nav>
   )
 }
@@ -9,8 +9,8 @@ const NavBar = () => {
 // Inline styles for simplicity
 const styles = {  
   navbar: {
-    backgroundColor: '#333',
-    color: '#fff',
+    backgroundColor: '#c7198dff',
+    color: '#ef7809ff',
     padding: '10px',
     textAlign: 'center',
   },
